@@ -21,3 +21,8 @@ odoo --no-xmlrpc --stop-after-init -u all -d nombrebasedatos
 problema schwifty
 
 python3 -m pip install --no-cache-dir --force-reinstall "schwifty==2024.4.0"
+
+problema openupgradelib
+
+docker exec -it <contenedor_odoo> bash -lc 'python3 -m pip install --no-cache-dir --user -U openupgradelib'
+
