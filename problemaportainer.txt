@@ -1,3 +1,6 @@
+Solucion al error de portainer Failed Loading Environment
+
+
 You can fix it without downgrading Docker or Portainer. You can add the variable DOCKER_MIN_API_VERSION=1.24 to the docker service config ( this fixes the issue for Traefik aswell if you are using this, since traefik uses the version 1.24 )
 
 systemctl edit docker.service
@@ -9,3 +12,9 @@ systemctl restart docker
 Edit: We are using Version: 2.27.3 LTS Community Edition and did not encounter any issues whatsoever after doing that.
 
 Edit 2: If you are using the Business Edition it seems that there still is an issue with you not being able to see the docker-compose.yml files for your stacks. The CE edition does not have this issue.
+
+Regenerar portainer
+
+docker compose down
+docker compose pull
+docker compose up -d
