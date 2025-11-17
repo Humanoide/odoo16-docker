@@ -30,7 +30,6 @@ lxml==4.6.3
 MarkupSafe==1.1.1
 num2words==0.5.9
 odfpy==1.4.1
-odoo==16.0.post20250909
 ofxparse==0.19
 openupgradelib==3.12.0
 paramiko==3.4.0
