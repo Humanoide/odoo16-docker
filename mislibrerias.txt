@@ -1,4 +1,3 @@
-odoo@6e38eb15e72b:/$ pip freeze 
 appdirs==1.4.4
 argh==0.26.2
 attrs==20.3.0
